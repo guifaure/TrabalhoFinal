@@ -1,0 +1,20 @@
+﻿<Window x:Class="Final.DialogoObito"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final"
+        mc:Ignorable="d"
+        Title="DialogoObito" Height="335.318" Width="224.099"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid Margin="0,0,2,3">
+        <Label Content="Nrº animal:" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="TB_NR" HorizontalAlignment="Left" Height="23" Margin="26,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Relatório:" HorizontalAlignment="Left" Margin="22,86,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="TB_Rel" HorizontalAlignment="Left" Height="110" Margin="26,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Confirmar" HorizontalAlignment="Left" Margin="116,266,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

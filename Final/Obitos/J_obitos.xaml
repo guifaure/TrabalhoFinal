@@ -1,0 +1,21 @@
+﻿<Window x:Class="Final.Obitos.J_obitos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final.Obitos"
+        mc:Ignorable="d"
+        Title="J_obitos" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="DG_Animais" Margin="45,28,0,0" HorizontalAlignment="Left" Width="703" Height="330" VerticalAlignment="Top">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Imprimir" Click="MenuItem_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <Button x:Name="BT_Voltar" Content="Voltar" HorizontalAlignment="Left" Margin="45,374,0,0" VerticalAlignment="Top" Width="83" Height="29" Click="BT_Voltar_Click"/>
+
+    </Grid>
+</Window>

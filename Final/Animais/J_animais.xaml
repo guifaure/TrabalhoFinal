@@ -1,0 +1,39 @@
+﻿<Window x:Class="Final.Animais.J_animais"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final.Animais"
+        mc:Ignorable="d"
+        Title="J_animais" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <DataGrid Name="DG_Animais" Margin="45,160,0,0" Height="198" VerticalAlignment="Top" HorizontalAlignment="Left" Width="703" IsReadOnly="True" SelectionChanged="DG_Animais_SelectionChanged" AutoGeneratingColumn="DG_Animais_AutoGeneratingColumn">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Imprimir" Click="MenuItem_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <Label Content="Nº de registo:" HorizontalAlignment="Left" Margin="45,32,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="TB_nanimal" HorizontalAlignment="Left" Height="23" Margin="143,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <Label Content="Sexo:" HorizontalAlignment="Left" Margin="43,75,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="RB_Macho" Content="Macho" HorizontalAlignment="Left" Margin="102,83,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_2"/>
+        <RadioButton Name="RB_Femea" Content="Fêmea" HorizontalAlignment="Left" Margin="190,83,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1"/>
+        <Label Content="Observações:" HorizontalAlignment="Left" Margin="556,32,0,0" VerticalAlignment="Top"/>
+        <Grid Name="Grid_Leite" HorizontalAlignment="Left" Height="96" Margin="319,17,0,0" VerticalAlignment="Top" Width="208" Visibility="Visible" >
+            <CheckBox Name="CB_Leite" Content="Ativo" HorizontalAlignment="Left" Margin="123,21,0,0" VerticalAlignment="Top"/>
+            <Label Content="Produção de leite:" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
+            <Label Content="Média de leite (L):" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="TB_Med" HorizontalAlignment="Left" Height="23" Margin="123,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        </Grid>
+        <Button Name="BT_Voltar" Content="Voltar" HorizontalAlignment="Left" Margin="45,374,0,0" VerticalAlignment="Top" Width="83" Height="29" Click="BT_Voltar_Click"/>
+        <Button Name="BT_Adicionar" Content="Adicionar registo" HorizontalAlignment="Left" Margin="651,374,0,0" VerticalAlignment="Top" Width="97" Height="29" Click="BT_Adicionar_Click"/>
+        <Button Name="BT_Alterar" Content="Alterar registo" HorizontalAlignment="Left" Margin="556,374,0,0" VerticalAlignment="Top" Width="80" Height="29" Click="BT_Alterar_Click"/>
+        <Button Name="BT_Obitor" Content="Declarar óbito" HorizontalAlignment="Left" Margin="203,374,0,0" VerticalAlignment="Top" Width="83" Height="29" Click="BT_Obitor_Click"/>
+        <TextBox Name="TB_Obs" HorizontalAlignment="Left" Height="85" Margin="562,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+        <Button x:Name="BT_Limpar" Content="Limpar" HorizontalAlignment="Left" Margin="401,374,0,0" VerticalAlignment="Top" Width="83" Height="29" Click="BT_Limpar_Click"/>
+        
+    </Grid>
+</Window>
